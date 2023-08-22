@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ПОиск</title>
+<!--    подключение css-->
+<li
+</head>
+<body>
+<!--     form для отправки данных на сервер-->
+     <h1>форма для поиска</h1>
+    <form action="results.html">
+        <input type="text" name="query_string" value="" placeholder="строка поиска">
+        <br>
+        <br>
+       <p><select name="where">
+            <option value="all"> Везде</option>
+            <option value="company">В названии компании</option>
+            <option selected value="name">В названии вакансии </option>
+        </select></p>
+        <input type="submit" value="Искать">
+    </form>
+     <hr>
+     <a href="index.html">на главную </a>
+</body>
+</html>
