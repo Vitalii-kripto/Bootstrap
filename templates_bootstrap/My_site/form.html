@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900'); display: flex; justify-content: center; align-items: center;">
+    <div class="text-center my-5">
+        <h1 style="color: white; font-size: 2rem; font-weight: bold;">Поиск вакансии</h1>
+        <form action="results.html">
+            <input class="form-control" type="text" name="query_string" value="" placeholder="строка поиска">
+            <br>
+            <br>
+            <p><select class="form-control" name="where">
+                <option value="all"> Везде</option>
+                <option value="company">В названии компании</option>
+                <option selected value="name">В названии вакансии </option>
+            </select></p>
+            <input class="btn btn-primary" type="submit" value="Искать">
+        </form>
+    </div>
+</header>
+
+<!-- Подключение Bootstrap JS (если требуется) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
